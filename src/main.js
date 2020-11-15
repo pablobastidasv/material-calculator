@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import router from './core/router'
 import i18n from "@/core/i18n";
 
 import './../node_modules/bulma/css/bulma.css';

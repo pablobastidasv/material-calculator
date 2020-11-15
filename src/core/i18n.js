@@ -1,4 +1,4 @@
-import es from '../assets/i18n/es.json'
+import es from './assets/i18n/es.json'
 import VueI18n from "vue-i18n";
 import Vue from 'vue'
 
