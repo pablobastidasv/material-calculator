@@ -22,12 +22,12 @@
     .columns.is-mobile
       .column
         .field
-          .label Largo
+          .label Largo (en metros)
           .control
             input.input(v-model="params.long" type="number" placeholder="Largo")
       .column
         .field
-          .label Ancho
+          .label Ancho (en metros)
           .control
             input.input(v-model="params.width" type="number" placeholder="Ancho")
 

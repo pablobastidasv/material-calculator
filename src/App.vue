@@ -3,7 +3,7 @@
     nav.navbar
       .navbar-brand
         a.navbar-item(href="https://bulma.io")
-          img(src="@/assets/logo.png" width="112" height="28")
+          img(src="@/core/assets/logo.png" width="112" height="28")
 
       #navbarBasicExample.navbar-menu
         .navbar-start
