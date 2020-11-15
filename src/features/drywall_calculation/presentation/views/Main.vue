@@ -1,5 +1,8 @@
-<template>
-  <Form />
+<template lang="pug">
+  div
+    h1 Calculadora de materiales
+    Form
+
 </template>
 
 <script>
@@ -11,5 +14,9 @@ export default {
 </script>
 
 <style scoped>
-
+h1 {
+  color: royalblue;
+  font-size: 2em;
+  font-weight: bold;
+}
 </style>
