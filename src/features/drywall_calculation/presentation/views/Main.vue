@@ -9,6 +9,7 @@
 <script>
 import Form from "@/features/drywall_calculation/presentation/components/Form";
 import ValueTable from "@/features/drywall_calculation/presentation/components/ValueTable";
+import DrywallCalculator from "@/features/drywall_calculation/domain/boundary/drywall-calculator";
 export default {
   name: "Main",
   components: {ValueTable, Form},
@@ -18,19 +19,9 @@ export default {
     }
   },
   methods: {
-    calculate: function($parameters) {
-      console.log("Calculating", $parameters);
-      this.materials= [
-        {
-          name: "Area",
-          value: "6",
-          unit: "m^2"
-        },{
-          name: "Perímetro",
-          value: "6",
-          unit: "m"
-        }
-      ]
+    calculate: async function($parameters) {
+      const calculator = new DrywallCalculator();
+      this.materials = await calculator.calculate($parameters);
     }
   }
 }
