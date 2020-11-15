@@ -3,7 +3,7 @@
     .column.is-half.pl-4
       .columns.material-row.is-gapless(v-for="material in materials")
         .column.is-3.material-item
-          strong {{ material.name }}
+          strong {{ $t(material.name) }}
         .column.is-2.material-item {{ material.value }} {{ material.unit }}
 </template>
 
