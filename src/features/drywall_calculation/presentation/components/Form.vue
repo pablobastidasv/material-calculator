@@ -35,7 +35,7 @@
       .column
         .field
           .control
-            .button.is-link(@click="saveHandler") Search
+            .button.is-link(@click="saveHandler") Calcular
 
 
 </template>
