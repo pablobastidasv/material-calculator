@@ -34,6 +34,18 @@
     .columns.is-mobile
       .column
         .field
+          .label Área (en m^2)
+          .control
+            input.input.no-border(v-model="area" readonly=true type="number" placeholder="Largo")
+      .column
+        .field
+          .label Perímetro (en metros)
+          .control
+            input.input.no-border(v-model="perimeter" readonly="true" type="number" placeholder="Ancho")
+
+    .columns.is-mobile
+      .column
+        .field
           .control
             .button.is-link(@click="saveHandler") Calcular
 
@@ -53,6 +65,14 @@ export default {
       }
     }
   },
+  computed: {
+    area: function() {
+      return this.params.long * this.params.width
+    },
+    perimeter: function() {
+      return this.params.long * 2 + this.params.width * 2
+    }
+  },
   methods: {
     saveHandler: function() {
       this.$emit("search", this.params)
@@ -62,5 +82,7 @@ export default {
 </script>
 
 <style scoped>
-
+.no-border {
+  border: 0;
+}
 </style>
