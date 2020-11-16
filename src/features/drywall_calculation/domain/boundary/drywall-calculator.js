@@ -8,15 +8,18 @@ class DrywallCalculator {
 
     const materials = [];
     for (const name in rawMaterials) {
-      this.extractValuesFromRawResponse(rawMaterials, name, materials);
+      const material = this.extractValuesFromRawResponse(rawMaterials, name);
+      if(material.value){
+        materials.push(material);
+      }
     }
     return materials
   }
 
-  extractValuesFromRawResponse(rawMaterials, name, materials) {
+  extractValuesFromRawResponse(rawMaterials, name) {
     let qty = rawMaterials[name];
     let unit = this.unitOf(name);
-    materials.push(new MaterialData(name, qty, unit))
+    return new MaterialData(name, qty, unit);
   }
 
   unitOf(name) {
