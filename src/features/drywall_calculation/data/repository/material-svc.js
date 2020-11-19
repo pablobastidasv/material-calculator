@@ -1,8 +1,8 @@
 import MaterialResponse
   from "@/features/drywall_calculation/data/model/material-response";
 
-const BASE_URL = `http://localhost:8080/material_calculator`;
-// const BASE_URL = `https://us-central1-avalane-staging.cloudfunctions.net/MaterialCalculatorFunction`;
+// const BASE_URL = `http://localhost:8080/material_calculator`;
+const BASE_URL = `https://us-central1-avalane-staging.cloudfunctions.net/MaterialCalculatorFunction`;
 
 function getMaterialResponse(data) {
   return new MaterialResponse(
