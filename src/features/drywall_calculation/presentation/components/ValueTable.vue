@@ -1,6 +1,7 @@
 <template lang="pug">
   .columns.is-centered.is-mobile
     .column.is-half.pl-4
+      value-item(material-name="sheets" :material="materials.sheets")
       value-item(v-if="job === 'Ceiling'" material-name="angles" :material="materials.angles")
       value-item(v-if="job === 'Ceiling'" material-name="principals" :material="materials.principals")
       value-item(v-if="job !== 'Ceiling'" material-name="canals" :material="materials.canals")
@@ -9,7 +10,6 @@
       value-item(material-name="putty" :material="materials.putty")
       value-item(material-name="dust_putty" :material="materials.dust_putty")
       value-item(material-name="screws" :material="materials.screws")
-      value-item(material-name="sheets" :material="materials.sheets")
 </template>
 
 <script>

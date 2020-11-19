@@ -22,10 +22,10 @@ class DrywallCalculator {
 
   unitOf(name) {
     switch (name) {
-      case "quantityOfDustPutty":
+      case "dust_putty":
         return "Bultos"
-      case "quantityOfPutty":
-      case "quantityOfPaintKeg":
+      case "putty":
+      case "paint_keg":
         return "Cuñete(s)"
       default: return "UND"
     }
