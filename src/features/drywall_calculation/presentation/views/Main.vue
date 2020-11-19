@@ -2,7 +2,7 @@
   div
     .title Calculadora de materiales
     Form(v-on:search="calculate")
-    ValueTable(:materials="materials")
+    ValueTable(:materials="materials" :job="job")
 
 </template>
 
@@ -15,13 +15,15 @@ export default {
   components: {ValueTable, Form},
   data: () => {
     return {
-      materials: []
+      materials: {},
+      job: ''
     }
   },
   methods: {
     calculate: async function($parameters) {
-      const calculator = new DrywallCalculator();
-      this.materials = await calculator.calculate($parameters);
+      this.job = $parameters.job;
+      this.materials = await new DrywallCalculator().calculate($parameters);
+      console.log(this.materials);
     }
   }
 }

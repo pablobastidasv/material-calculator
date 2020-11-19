@@ -1,20 +1,20 @@
 import MaterialResponse
   from "@/features/drywall_calculation/data/model/material-response";
 
-// const BASE_URL = `http://localhost:8080/material_calculator`;
-const BASE_URL = `https://us-central1-avalane-staging.cloudfunctions.net/MaterialCalculatorFunction`;
+const BASE_URL = `http://localhost:8080/material_calculator`;
+// const BASE_URL = `https://us-central1-avalane-staging.cloudfunctions.net/MaterialCalculatorFunction`;
 
 function getMaterialResponse(data) {
   return new MaterialResponse(
-      data.number_of_angles,
-      data.number_of_omegas,
-      data.number_of_principals,
-      data.number_of_canals,
-      data.number_of_screws,
-      data.number_of_sheets,
-      data.quantity_of_dust_putty,
-      data.quantity_of_paint_keg,
-      data.quantity_of_putty,
+      data.angles,
+      data.omegas_parals,
+      data.principals,
+      data.canals,
+      data.screws,
+      data.sheets,
+      data.dust_putty,
+      data.paint_keg,
+      data.putty,
   );
 
 }

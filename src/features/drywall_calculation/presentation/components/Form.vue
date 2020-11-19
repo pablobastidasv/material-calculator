@@ -24,12 +24,12 @@
         .field
           .label Largo (en metros)
           .control
-            input.input(v-model="params.long" type="number" placeholder="Largo")
+            input.input(@keyup.enter="saveHandler" v-model="params.long" type="number" placeholder="Largo")
       .column
         .field
           .label Ancho (en metros)
           .control
-            input.input(v-model="params.width" type="number" placeholder="Ancho")
+            input.input(@keyup.enter="saveHandler" v-model="params.width" type="number" placeholder="Ancho")
 
     .columns.is-mobile
       .column

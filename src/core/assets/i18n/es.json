@@ -1,11 +1,13 @@
 {
-  "numberOfAngles": "Ángulos",
-  "numberOfOmegas": "Omegas",
-  "numberOfPrincipals": "Principales",
-  "numberOfCanals":  "Canales",
-  "numberOfScrews": "Tornillos",
-  "numberOfSheets":  "Laminas",
-  "quantityOfDustPutty": "Masilla en polvo",
-  "quantityOfPaintKeg":  "Pintura",
-  "quantityOfPutty": "Masilla"
+  "angles": "Ángulos",
+  "omegas": "Omegas",
+  "principals": "Principales",
+  "canals":  "Canales",
+  "screws": "Tornillos",
+  "sheets":  "Laminas",
+  "dust_putty": "Masilla en polvo",
+  "paintKeg":  "Pintura",
+  "putty": "Masilla",
+  "parals": "Parales",
+  "paint_keg": "Pintura"
 }

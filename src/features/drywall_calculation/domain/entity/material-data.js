@@ -1,6 +1,5 @@
 class MaterialData {
-  constructor(name, quantity, unit) {
-    this.name = name;
+  constructor(quantity, unit) {
     this.value = quantity;
     this.unit = unit;
   }
